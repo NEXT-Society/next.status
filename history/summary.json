@@ -5,18 +5,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/next.ieb.net.ico",
     "slug": "wiki",
     "status": "down",
-    "uptime": "56.22%",
-    "uptimeDay": "56.22%",
-    "uptimeWeek": "56.22%",
-    "uptimeMonth": "56.22%",
-    "uptimeYear": "56.22%",
+    "uptime": "1.14%",
+    "uptimeDay": "1.14%",
+    "uptimeWeek": "1.14%",
+    "uptimeMonth": "1.14%",
+    "uptimeYear": "1.14%",
     "time": 580,
     "timeDay": 580,
     "timeWeek": 580,
     "timeMonth": 580,
     "timeYear": 580,
     "dailyMinutesDown": {
-      "2026-11-11": 0
+      "2026-11-11": 27
     }
   },
   {
