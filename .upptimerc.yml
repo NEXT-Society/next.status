@@ -1,31 +1,40 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime configuration: https://upptime.js.org/docs/configuration
+# Server side: NEXT-Society/next.infra (role status writes /status/metrics.json).
+owner: NEXT-Society
+repo: next.status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Wiki
+    url: https://next.ieb.net/s/society
+  - name: Landing page
+    url: https://nextsociety.ieb.net/
+  # Thresholds (disk, memory, swap, containers) are evaluated on the server.
+  # Anything but "status":"OK" (e.g. "WARN disk 91%") marks this check down and opens an issue.
+  - name: Server health
+    url: https://next.ieb.net/status/metrics.json
+    __dangerous__body_down_if_text_missing: '"status":"OK"'
+
+# Downtime issues are assigned to the maintainers (GitHub notifies them).
+assignees:
+  - DaMo86
+  - meerestier
+
+# Strict allowlist: no repository secrets are passed to the checks.
+# Add NOTIFICATION_ZULIP_* here when the Zulip notification is set up.
+secrets: []
+
+user-agent: next-society-status
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /next.status
+  name: NEXT Society Status
+  logoUrl: https://nextsociety.ieb.net/assets/img/logo.svg
+  introTitle: "**NEXT Society** service status"
+  introMessage: Availability of the wiki and the landing page, and the health of the server they run on. Checked every 5 minutes.
   navbar:
     - title: Status
       href: /
+    - title: Wiki
+      href: https://next.ieb.net
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
