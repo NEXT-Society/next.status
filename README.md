@@ -8,6 +8,19 @@ This repository contains the open-source uptime monitor and status page for [NEX
 [![Static Site CI](https://github.com/NEXT-Society/next.status/workflows/Static%20Site%20CI/badge.svg)](https://github.com/NEXT-Society/next.status/actions/workflows/site.yml)
 [![Summary CI](https://github.com/NEXT-Society/next.status/workflows/Summary%20CI/badge.svg)](https://github.com/NEXT-Society/next.status/actions/workflows/summary.yml)
 
+### Server health
+
+Live values from [`next.ieb.net/status/metrics.json`](https://next.ieb.net/status/metrics.json), written every minute on the server
+([next.infra](https://github.com/NEXT-Society/next.infra), role `status`). Thresholds are evaluated there; anything but `OK` marks *Server health* down.
+Badges are cached for up to 5 minutes.
+
+[![Server status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fnext.ieb.net%2Fstatus%2Fmetrics.json&query=%24.status&label=server&color=informational&cacheSeconds=300)](https://next.ieb.net/status/metrics.json)
+[![Disk used](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fnext.ieb.net%2Fstatus%2Fmetrics.json&query=%24.disk&label=disk&suffix=%25&color=informational&cacheSeconds=300)](https://next.ieb.net/status/metrics.json)
+[![Memory used](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fnext.ieb.net%2Fstatus%2Fmetrics.json&query=%24.mem&label=memory&suffix=%25&color=informational&cacheSeconds=300)](https://next.ieb.net/status/metrics.json)
+[![Swap used](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fnext.ieb.net%2Fstatus%2Fmetrics.json&query=%24.swap&label=swap&suffix=%25&color=informational&cacheSeconds=300)](https://next.ieb.net/status/metrics.json)
+[![Memory peak in the last 15 minutes](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fnext.ieb.net%2Fstatus%2Fmetrics.json&query=%24.window.mem_max&label=memory%20peak%2015%20min&suffix=%25&color=informational&cacheSeconds=300)](https://next.ieb.net/status/metrics.json)
+[![Minutes with WARN in the last 15 minutes](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fnext.ieb.net%2Fstatus%2Fmetrics.json&query=%24.window.warn_minutes&label=WARN%20minutes%2015%20min&color=informational&cacheSeconds=300)](https://next.ieb.net/status/metrics.json)
+
 With [Upptime](https://upptime.js.org), you can get your own unlimited and free uptime monitor and status page, powered entirely by a GitHub repository. We use [Issues](https://github.com/NEXT-Society/next.status/issues) as incident reports, [Actions](https://github.com/NEXT-Society/next.status/actions) as uptime monitors, and [Pages](https://NEXT-Society.github.io/next.status) for the status page.
 
 <!--start: status pages-->
