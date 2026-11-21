@@ -5,16 +5,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/next.ieb.net.ico",
     "slug": "wiki",
     "status": "up",
-    "uptime": "99.77%",
+    "uptime": "99.80%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.77%",
-    "uptimeYear": "99.77%",
-    "time": 638,
-    "timeDay": 754,
-    "timeWeek": 635,
-    "timeMonth": 638,
-    "timeYear": 638,
+    "uptimeMonth": "99.80%",
+    "uptimeYear": "99.80%",
+    "time": 641,
+    "timeDay": 666,
+    "timeWeek": 639,
+    "timeMonth": 641,
+    "timeYear": 641,
     "dailyMinutesDown": {
       "2026-11-11": 27
     }
@@ -30,11 +30,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 754,
-    "timeDay": 1035,
-    "timeWeek": 723,
-    "timeMonth": 754,
-    "timeYear": 754,
+    "time": 744,
+    "timeDay": 650,
+    "timeWeek": 704,
+    "timeMonth": 744,
+    "timeYear": 744,
     "dailyMinutesDown": {}
   },
   {
@@ -48,11 +48,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 492,
-    "timeDay": 573,
-    "timeWeek": 469,
-    "timeMonth": 492,
-    "timeYear": 492,
+    "time": 496,
+    "timeDay": 537,
+    "timeWeek": 472,
+    "timeMonth": 496,
+    "timeYear": 496,
     "dailyMinutesDown": {}
   }
 ]
